@@ -74,3 +74,10 @@ Explanation:
   ViewModel: The UserViewModel class is responsible for fetching and managing user data. It uses @Published to         notify the View of data changes.
   
   View: The UserView struct displays the list of users. It observes changes in UserViewModel using @ObservedObject.
+
+
+Using Combine:
+In the ViewModel, Combine's @Published property wrapper is used to automatically notify the View when data changes. This ensures that the View is always in sync with the data.
+
+Using SwiftUI:
+SwiftUI simplifies the implementation of MVVM by providing a declarative syntax for defining the UI. The @ObservedObject property wrapper is used to bind the ViewModel to the View.
